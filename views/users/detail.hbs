@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{title}}</h1>
+        {{#if user}}
+            <div class="user-detail">
+                <h2>{{user.name}}</h2>
+                <p>Email: {{user.email}}</p>
+                <p>ID: {{user.id}}</p>
+            </div>
+        {{else}}
+            <p>User not found</p>
+        {{/if}}
+        <a href="/users" class="back-button">Back to Users List</a>
+    </div>
+</body>
+</html>
